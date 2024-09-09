@@ -1,7 +1,17 @@
 import port01 from '../assets/img/port01.jpg'
 import port02 from '../assets/img/port02.jpg'
 import port03 from '../assets/img/port03.jpg'
-
+import htmlImg from '../assets/img/html.png';
+import cssImg from '../assets/img/css.png';
+import javascriptImg from '../assets/img/javascript.png';
+import vueImg from '../assets/img/vue.png';
+import nodejsImg from '../assets/img/nodejs.png';
+import pythonImg from '../assets/img/python.png';
+import javaImg from '../assets/img/java.png';
+import mariaDBImg from '../assets/img/mariadb.png';
+// import awsImg from 'path/to/aws.png';
+// import herokuImg from 'path/to/heroku.png';
+// import vercelImg from 'path/to/vercel.png';
 
 export const headerNav = [
   {
@@ -45,6 +55,68 @@ export const aboutText = [
     desc: '나는 사회생활에서 종종 빠른 성공을 꿈꿀 때가 있었다. 그러나 나는 빠른 길보다는 바른 길을 택했다. 정직하게 일을 처리하고, 책임을 다하는 것이 나의 원칙이었다. 그 길이 더디더라도, 나는 내 선택이 옳았음을 증명했다. 결국, 나의 노력은 정당한 대가로 돌아왔다.'
   }
 ]
+export const skills = [
+  {
+    title: 'Frontend',
+    images: [
+      {
+        src: htmlImg,
+        alt: 'HTML'
+      },
+      {
+        src: cssImg,
+        alt: 'CSS'
+      },
+      {
+        src: javascriptImg,
+        alt: 'Javascript'
+      },
+      {
+        src: vueImg,
+        alt: 'Vue'
+      }
+     
+    ]
+  },
+  {
+    title: 'Backend',
+    images: [
+      {
+        src: nodejsImg,
+        alt: 'Node.js'
+      },
+      {
+        src: pythonImg,
+        alt: 'Python'
+      },
+      {
+        src: javaImg,
+        alt: 'Java'
+      },
+      {
+        src: databaseImg,
+        alt: 'Database'
+      }
+    ]
+  },
+  {
+    title: 'Deployment',
+    images: [
+      // {
+      //   src: awsImg,
+      //   alt: 'AWS'
+      // },
+      // {
+      //   src: herokuImg,
+      //   alt: 'Heroku'
+      // },
+      // {
+      //   src: vercelImg,
+      //   alt: 'Vercel'
+      // }
+    ]
+  }
+];
 
 export const siteText = [
   {
