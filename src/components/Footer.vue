@@ -6,15 +6,15 @@ import { footerText } from "../constants";
     <footer id="footer" role="contentinfo">
         <div class="footer__inner">
             <h2 class="footer__text">
-                <div>webstoryboy</div>
+                <div>BeakJiWook</div>
                 <div>@webs</div>
             </h2>
             <div class="footer__info">
                 <div class="left">
                     <div class="title">
-                        <a href="#">sign up</a>
+                        <a href="#">개발중</a>
                     </div>
-                    <p class="desc">회원가입을 하시면 댓글과 게시판 기능을 이용할 수 있습니다.</p>
+                    <p class="desc">개발중</p>
                 </div>
                 <div class="right">
                     <h3>social</h3>
@@ -27,7 +27,6 @@ import { footerText } from "../constants";
                 </div>
             </div>
             <div class="footer__right">
-                &copy; 2023 webstoryboy<br />
                 이 사이트는 뷰를 이용하여 제작하였습니다.
             </div>
         </div>

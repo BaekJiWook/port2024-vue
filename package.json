@@ -9,8 +9,11 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.19",
+    "cors": "^2.8.5",
+    "express": "^4.20.0",
     "gsap": "^3.12.2",
     "port2023-vue": "file:",
+    "request": "^2.88.2",
     "sass": "^1.64.2",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"

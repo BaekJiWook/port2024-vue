@@ -4,7 +4,7 @@ import Header from "@/components/Header.vue";
 import Intro from "@/components/Intro.vue";
 import About from "@/components/About.vue";
 import Skills from "@/components/Skills.vue";
-import Site from "@/components/Site.vue";
+import History from "@/components/History.vue";
 import Port from "@/components/Port.vue";
 import Contact from "@/components/Contact.vue";
 import Footer from "@/components/Footer.vue";
@@ -17,7 +17,7 @@ import Footer from "@/components/Footer.vue";
     <Intro />
     <About />
     <Skills />
-    <Site />
+    <History />
     <Port />
     <Contact />
   </main>

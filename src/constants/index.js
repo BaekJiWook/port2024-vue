@@ -9,9 +9,9 @@ import nodejsImg from '../assets/img/nodejs.png';
 import pythonImg from '../assets/img/python.png';
 import javaImg from '../assets/img/java.png';
 import mariaDBImg from '../assets/img/mariadb.png';
-// import awsImg from 'path/to/aws.png';
-// import herokuImg from 'path/to/heroku.png';
-// import vercelImg from 'path/to/vercel.png';
+import awsImg from '../assets/img/aws.png';
+import dockerImg from '../assets/img/docker.png';
+
 
 export const headerNav = [
   {
@@ -23,8 +23,12 @@ export const headerNav = [
     url: '#about'
   },
   {
-    title: 'site',
-    url: '#site'
+    title: 'skills',
+    url: '#skills'
+  },
+  {
+    title: 'history',
+    url: '#history'
   },
   {
     title: 'portfolio',
@@ -38,7 +42,7 @@ export const headerNav = [
 
 export const introText = {
   title: 'port developer',
-  desc: ['talent is', 'found at the end of the', 'effort']
+  desc: ['baek', 'ji', 'wook']
 }
 
 export const aboutText = [
@@ -94,75 +98,44 @@ export const skills = [
         alt: 'Java'
       },
       {
-        src: databaseImg,
-        alt: 'Database'
+        src: mariaDBImg,
+        alt: 'MariaDB'
       }
     ]
   },
   {
     title: 'Deployment',
     images: [
-      // {
-      //   src: awsImg,
-      //   alt: 'AWS'
-      // },
-      // {
-      //   src: herokuImg,
-      //   alt: 'Heroku'
-      // },
-      // {
-      //   src: vercelImg,
-      //   alt: 'Vercel'
-      // }
+      {
+        src: awsImg,
+        alt: 'AWS'
+      },
+      {
+        src: dockerImg,
+        alt: 'Docker'
+      }
+      
     ]
   }
 ];
 
-export const siteText = [
+export const historyText = [
   {
-    text: ['make', 'site compliant with', 'webstandard'],
-    title: '비트를 이용한 사이트 제작',
-    code: 'https://github.com/webstoryboy/port2023-vite',
-    view: 'https://port2023-vite.netlify.app',
-    info: [
-      'site coding',
-      'production period : two days',
-      'use stack : HTML5/CSS3, CSS Variable, Vite'
+    customText: '1. 경력',
+    details: [
+      { title: '서진주공공스포츠클럽', desc: '2021/2 ~ 2024/2' },
+      { title: '경상남도 환경교육원', desc: '2019/12 ~ 2021/1' },
+      { title: '경상남도농업기술원', desc: '2018 ~ 2019' }
     ]
   },
   {
-    text: ['make', 'site compliant with', 'react.js'],
-    title: '리액트를 이용한 사이트 제작',
-    code: 'https://github.com/webstoryboy/port2023-react',
-    view: 'https://port2023-react.netlify.app',
-    info: [
-      'site coding',
-      'production period : two days',
-      'use stack : HTML5/CSS3, CSS Variable, react'
-    ]
-  },
-  {
-    text: ['make', 'site compliant with', 'vue.js'],
-    title: '뷰를 이용한 사이트 제작',
-    code: 'https://github.com/webstoryboy/port2023-vue',
-    view: 'https://port2023-vue.netlify.app',
-    info: [
-      'site coding',
-      'production period : two days',
-      'use stack : HTML5/CSS3, Scss Variable, vue'
-    ]
-  },
-  {
-    text: ['make', 'site compliant with', 'next.js'],
-    title: '넥스트를 이용한 사이트 제작',
-    code: 'https://github.com/webstoryboy/port2023-next',
-    view: 'https://port2023-next.netlify.app',
-    info: [
-      'site coding',
-      'production period : two days',
-      'use stack : HTML5/CSS3, Scss Variable, next.js'
+    customText: '2. 학력',
+    details: [
+      { title: '한국폴리텍 강서캠퍼스', desc: '2024/3 ~ 현재' },
+      { title: '경상대학교 동물생명과학과', desc: '2013/3 ~ 2018/2' }
     ]
   }
+  
 ]
 
 export const portText = [
@@ -200,49 +173,20 @@ export const portText = [
 
 export const contactText = [
   {
-    link: 'https://open.kakao.com/o/gM7YLzwf',
-    title: 'KAKAO : webstupids'
+    link: 'mailto:baek990@naver.com',
+    title: 'mail :baek990@naver.com'
   },
   {
-    link: 'mailto:webstoryboy@naver.com',
-    title: 'mail : webstoryboy@naver.com'
-  }
+    link: 'https://open.kakao.com/o/g1sazdOg',
+    title: 'kakao : https://open.kakao.com/o/g1sazdOg'
+  }  
 ]
 
 export const footerText = [
-  {
-    title: 'youtube',
-    desc: '유튜브에 오시면 더 많은 강의를 볼 수 있습니다.',
-    link: 'https://www.youtube.com/@Webstoryboy'
-  },
+  
   {
     title: 'github',
     desc: '깃헙에 오시면 더 많은 소스를 볼 수 있습니다.',
-    link: 'https://github.com/webstoryboy'
-  },
-  {
-    title: 'blog',
-    desc: '블러그에 오시면 더 많은 정보를 볼 수 있습니다.',
-    link: 'https://webstoryboy.co.kr'
-  },
-  {
-    title: 'gsap',
-    desc: 'GSAP에 오시면 더 많은 강의를 볼 수 있습니다.',
-    link: 'https://www.youtube.com/playlist?list=PL4UVBBIc6giL8-6jvrClimg0cFL-Muqiq'
-  },
-  {
-    title: 'react',
-    desc: '리액트로 만든 사이트를 같이 만들어 봅니다.',
-    link: 'https://github.com/webstoryboy/port2023-react'
-  },
-  {
-    title: 'vue',
-    desc: '뷰로 만든 사이트를 같이 만들어 봅니다.',
-    link: 'https://github.com/webstoryboy/port2023-vue'
-  },
-  {
-    title: 'next',
-    desc: '넥스트로 만든 사이트를 같이 만들어 봅니다.',
-    link: 'https://github.com/webstoryboy/port2023-next'
+    link: 'https://github.com/BaekJiWook'
   }
 ]

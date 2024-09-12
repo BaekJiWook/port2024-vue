@@ -87,7 +87,7 @@ export default {
     width: 7000px;
 
     .port__item {
-      width: 500px;
+      width: 600px;
       height: 70vh;
       background-color: var(--subBg100);
       padding: 2.5rem;
@@ -102,27 +102,7 @@ export default {
       &:nth-child(3) {
         background-color: var(--subBg300);
       }
-      &:nth-child(4) {
-        background-color: var(--subBg400);
-      }
-      &:nth-child(5) {
-        background-color: var(--subBg500);
-      }
-      &:nth-child(6) {
-        background-color: var(--subBg100);
-      }
-      &:nth-child(7) {
-        background-color: var(--subBg200);
-      }
-      &:nth-child(8) {
-        background-color: var(--subBg300);
-      }
-      &:nth-child(9) {
-        background-color: var(--subBg400);
-      }
-      &:nth-child(10) {
-        background-color: var(--subBg500);
-      }
+      
       .num {
         font-size: 2rem;
         font-family: var(--mainNum-font);
