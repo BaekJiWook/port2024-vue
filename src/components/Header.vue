@@ -1,40 +1,48 @@
 <script setup>
 import { headerNav } from '../constants'
+import GoogleTranslate from './GoogleTranslate.vue'
 </script>
 
 <template>
-  <header id="header" role="banner">
-    <div class="header__inner">
-      <div class="header__logo">
-        <h1>
-          <a href="#">portfolio<em>jiwook</em></a>
-        </h1>
+  <div>
+    <header id="header" role="banner">
+      <div class="header__inner">
+        <div class="header__logo">
+          <h1>
+            <a href="#">portfolio<em>jiwook</em></a>
+          </h1>
+        </div>
+        <nav
+          class="header__nav"
+          :class="{ show: isNavVisible }"
+          role="navigation"
+          aria-label="메인 메뉴"
+        >
+          <ul>
+            <li v-for="(nav, key) in headerNav" :key="key">
+              <a :href="nav.url" @click="scrollLink($event)">{{ nav.title }}</a>
+            </li>
+          </ul>
+        </nav>
+        <div
+          class="header__nav__mobile"
+          id="headerToggle"
+          aria-controls="primary-menu"
+          :aria-expanded="isNavVisible.toString()"
+          role="button"
+          tabindex="0"
+          @click="toggleMobileMenu"
+        >
+          <span></span>
+        </div>
       </div>
-      <nav
-        class="header__nav"
-        :class="{ show: isNavVisible }"
-        role="navigation"
-        aria-label="메인 메뉴"
-      >
-        <ul>
-          <li v-for="(nav, key) in headerNav" :key="key">
-            <a :href="nav.url" @click="scrollLink($event)">{{ nav.title }}</a>
-          </li>
-        </ul>
-      </nav>
-      <div
-        class="header__nav__mobile"
-        id="headerToggle"
-        aria-controls="primary-menu"
-        :aria-expanded="isNavVisible.toString()"
-        role="button"
-        tabindex="0"
-        @click="toggleMobileMenu"
-      >
-        <span></span>
-      </div>
-    </div>
-  </header>
+    </header>
+
+    <!-- 헤더 아래에 올 컴포넌트들을 위한 공간 확보 -->
+    <main id="main-content">
+      <GoogleTranslate />
+    </main>
+  </div>
 </template>
 
 <script>
@@ -50,7 +58,6 @@ export default {
     },
     scrollLink(event) {
       event.preventDefault()
-
       const targetId = event.target.getAttribute('href')
       const targetElement = document.querySelector(targetId)
 
@@ -68,12 +75,22 @@ export default {
 #header {
   @include position-fixed;
   z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px; /* 헤더 높이 설정 */
 }
+
+#main-content {
+  padding-top: 80px; /* 헤더 높이만큼 패딩을 주어 겹치지 않도록 설정 */
+}
+
 .header__inner {
   @include flex-between;
   background-color: rgba(116, 99, 99, 0.1);
   backdrop-filter: blur(15px);
   padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow for separation */
 
   .header__logo {
     font-size: 0.9rem;
@@ -99,7 +116,7 @@ export default {
           display: block;
           position: absolute;
           right: 0;
-          top: 68px;
+          top: 68px; /* Adjust this to prevent overlap */
           background-color: rgba(116, 99, 99, 0.1);
           backdrop-filter: blur(15px);
           z-index: 10000;
