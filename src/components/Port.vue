@@ -59,6 +59,7 @@ export default {
   margin-top: 30vh;
   // overflow: hidden;
 }
+
 .port__inner {
   padding: 16px;
 
@@ -81,6 +82,7 @@ export default {
       line-height: 2;
     }
   }
+
   .port__wrap {
     display: flex;
     flex-wrap: wrap;
@@ -96,17 +98,20 @@ export default {
       &:nth-child(1) {
         background-color: var(--subBg100);
       }
+
       &:nth-child(2) {
         background-color: var(--subBg200);
       }
+
       &:nth-child(3) {
         background-color: var(--subBg300);
       }
-      
+
       .num {
         font-size: 2rem;
         font-family: var(--mainNum-font);
       }
+
       .img {
         display: block;
         margin-top: -20px;
@@ -126,6 +131,7 @@ export default {
           }
         }
       }
+
       .title {
         font-size: 1.5rem;
         text-align: center;
@@ -135,9 +141,11 @@ export default {
         border-bottom: 2px solid var(--black100);
         margin-bottom: 1rem;
       }
+
       .desc {
         font-size: 1rem;
       }
+
       .site {
         border: 1px solid var(--black100);
         display: block;

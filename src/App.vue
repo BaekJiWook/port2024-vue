@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted } from 'vue'
 import { RouterView } from 'vue-router'
-import Lenis from '@studio-freight/lenis'
+import Lenis from 'lenis'
 
 onMounted(() => {
   scrollAnimation()

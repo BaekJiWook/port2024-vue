@@ -8,18 +8,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@studio-freight/lenis": "^1.0.19",
     "cors": "^2.8.5",
     "express": "^4.20.0",
-    "gsap": "^3.12.2",
-    "port2023-vue": "file:",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.18",
     "request": "^2.88.2",
-    "sass": "^1.64.2",
+    "sass": "^1.83.0",
     "vue": "^3.3.4",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.4.6"
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
   }
 }
