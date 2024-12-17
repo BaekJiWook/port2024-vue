@@ -1,17 +1,16 @@
 import port01 from '../assets/img/port01.jpg'
 import port02 from '../assets/img/port02.jpg'
 import port03 from '../assets/img/port03.jpg'
-import htmlImg from '../assets/img/html.png';
-import cssImg from '../assets/img/css.png';
-import javascriptImg from '../assets/img/javascript.png';
-import vueImg from '../assets/img/vue.png';
-import nodejsImg from '../assets/img/nodejs.png';
-import pythonImg from '../assets/img/python.png';
-import javaImg from '../assets/img/java.png';
-import mariaDBImg from '../assets/img/mariadb.png';
-import awsImg from '../assets/img/aws.png';
-import dockerImg from '../assets/img/docker.png';
-
+import htmlImg from '../assets/img/html.png'
+import cssImg from '../assets/img/css.png'
+import javascriptImg from '../assets/img/javascript.png'
+import vueImg from '../assets/img/vue.png'
+import nodejsImg from '../assets/img/nodejs.png'
+import pythonImg from '../assets/img/python.png'
+import javaImg from '../assets/img/java.png'
+import mariaDBImg from '../assets/img/mariadb.png'
+import awsImg from '../assets/img/aws.png'
+import dockerImg from '../assets/img/docker.png'
 
 export const headerNav = [
   {
@@ -79,7 +78,6 @@ export const skills = [
         src: vueImg,
         alt: 'Vue'
       }
-     
     ]
   },
   {
@@ -114,10 +112,9 @@ export const skills = [
         src: dockerImg,
         alt: 'Docker'
       }
-      
     ]
   }
-];
+]
 
 export const historyText = [
   {
@@ -135,40 +132,18 @@ export const historyText = [
       { title: '경상대학교 동물생명과학과', desc: '2013/3 ~ 2018/2' }
     ]
   }
-  
 ]
 
 export const portText = [
   {
     num: '01',
-    title: '어워드에도 올라간 포트폴리오',
-    desc: '라마 디자인을 통해 자신의 스킬을 가장 멋지게 표현한 포트폴리오입니다. 가로 모드와 세로 모드는 매우 인상적이며 특히 리액트와 비트를 이용하여 제작한 것은 더욱 놀랍습니다. 이 사이트는 awwwards.com에도 인정받아 올라간 포트폴리오입니다. 확실히 그의 뛰어난 디자인 스킬과 기술력이 빛을 발휘한 결과물인 것 같습니다.',
+    title: '구인구직 사이트',
+    desc: '이 사이트는 구직자와 기업이 쉽게 만날 수 있도록 돕는 간단한 구인구직 플랫폼입니다.구직자는 원하는 일자리를 빠르게 찾고, 기업은 필요한 인재를 간편하게 채용할 수 있습니다.',
     img: port01,
-    code: 'https://github.com/kimsangjunv1/-React-Portfolio',
-    view: 'https://portfoliosj-react.netlify.app',
-    name: '김상* 포트폴리오'
-  },
-  {
-    num: '02',
-    title: '빛나는 밤에 포트폴리오',
-    desc: '이 사이트는 정말 인상적인 포트폴리오입니다. 특히 스무스한 효과와 가로 모드드 높은 퀄리티를 자랑합니다. 디테일과 꼼꼼함이 넘치는 포트폴리오는 개발자의 뛰어난 능력을 엿볼 수 있습니다. GSAP와 React.js를 이용하여 사이트를 표현한 것은 기술적인 능력과 창의성을 강조하는데, 부족함이 없으며, 세심한 코딩과 디테일한 작업으로 그의 개발 감각과 능력이 빛을 발휘한 것 같습니다. ',
-    img: port02,
-    code: 'https://github.com/seolhee313/PORTFOLIO-REACT',
-    view: 'https://portfolio-313.web.app/',
-    name: '천설* 포트폴리오'
-  },
-  {
-    num: '03',
-    title: '열정이 넘치는 포트폴리오',
-    desc: '이 사이트는 정말 인상적인 포트폴리오입니다. 특히 스무스한 효과와 가로 모드드 높은 퀄리티를 자랑합니다. 디테일과 꼼꼼함이 넘치는 포트폴리오는 개발자의 뛰어난 능력을 엿볼 수 있습니다. GSAP와 React.js를 이용하여 사이트를 표현한 것은 기술적인 능력과 창의성을 강조하는데, 부족함이 없으며, 세심한 코딩과 디테일한 작업으로 그의 개발 감각과 능력이 빛을 발휘한 것 같습니다. ',
-    img: port03,
-    code: 'https://github.com/seolhee313/PORTFOLIO-REACT',
-    view: 'https://portfolio-313.web.app/',
-    name: '천설* 포트폴리오'
+    code: 'https://github.com/BaekJiWook/vue3-job-portal',
+    view: 'https://vue3-job-portal.vercel.app/#/',
+    name: '백지욱 구인구직 사이트'
   }
-  
-    
-
 ]
 
 export const contactText = [
@@ -179,11 +154,10 @@ export const contactText = [
   {
     link: 'https://open.kakao.com/o/g1sazdOg',
     title: 'kakao : https://open.kakao.com/o/g1sazdOg'
-  }  
+  }
 ]
 
 export const footerText = [
-  
   {
     title: 'github',
     desc: '깃헙에 오시면 더 많은 소스를 볼 수 있습니다.',
