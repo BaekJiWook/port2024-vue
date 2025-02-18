@@ -143,6 +143,15 @@ export const portText = [
     code: 'https://github.com/BaekJiWook/vue3-job-portal',
     view: 'https://vue3-job-portal.vercel.app/#/',
     name: '백지욱 구인구직 사이트'
+  },
+  {
+    num: '02',
+    title: '위해상품 조회 및 등록 사이트 제작(ETL)',
+    desc: '이 사이트는 데이터이관을 통한(PostgresSQL to MariaDB) 위해, 일반 상품 등록 조회 기능이 있습니다. ',
+    img: port02,
+    code: 'https://github.com/BaekJiWook/ETL_items',
+    view: ' http://52.79.139.134:8081/',
+    name: '백지욱 위해상품 조회 사이트'
   }
 ]
 
